@@ -9,6 +9,7 @@ namespace Infrastructure.Identity.Entities
         public string IdCard { get; set; }
         public string CretedBy { get; set; }
         public bool isOnline { get; set; }
+        public string Plan { get; set; }
         public DateTime LastConnection { get; set; }
 
     }
