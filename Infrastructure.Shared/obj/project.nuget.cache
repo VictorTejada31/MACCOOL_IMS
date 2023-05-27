@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "JvdsiDwmth+mnYxt4RFge2yaaegoqOhc6QbuNZNK7RvcBl8AID0jsLmFfIM7TqcgWCbHdWuc+w+0zB/bIzQ3ag==",
+  "dgSpecHash": "nf42lZFqEuyf0RM1ruqrAfHocslsZnq5EsJqiVWgk32sFgaASUIEgKtuRDSwZLNOftMmyOXIvl9Zbv0bQpBv6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Shared\\Infrastructure.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\mailkit\\4.0.0\\mailkit.4.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\mimekit\\4.0.0\\mimekit.4.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
