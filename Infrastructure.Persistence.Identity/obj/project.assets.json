@@ -1269,11 +1269,24 @@
       "Core.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Core.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
         }
       }
     }
@@ -2937,6 +2950,11 @@
       "type": "project",
       "path": "../Application.Domain/Core.Application.csproj",
       "msbuildProject": "../Application.Domain/Core.Application.csproj"
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../Core.Domain/Core.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

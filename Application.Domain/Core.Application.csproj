@@ -9,10 +9,13 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Enums\" />
-    <Folder Include="Interfaces\Repository\" />
     <Folder Include="Mapping\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

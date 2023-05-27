@@ -7,6 +7,7 @@ namespace Core.Domain.Entities
         public double SalePrice { get; set; }
         public double PurchasePrice { get; set; }
         public int DefaultProductId { get; set; }
+        public int Amount { get; set; }
 
         //Navegation Property
 
