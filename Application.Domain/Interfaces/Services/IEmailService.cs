@@ -2,7 +2,7 @@
 
 namespace Core.Application.Interfaces.Services
 {
-    public interface IMailService
+    public interface IEmailService
     {
         Task SendAsync(EmailRequest request);
     }
