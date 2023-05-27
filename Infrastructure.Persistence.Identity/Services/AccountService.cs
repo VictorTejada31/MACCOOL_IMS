@@ -1,21 +1,26 @@
 ﻿using Core.Application.Dtos.Account;
+using Core.Application.Dtos.Email;
 using Core.Application.Enums;
+using Core.Application.Interfaces.Services;
 using Infrastructure.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
+using System.Text;
 
 namespace Infrastructure.Identity.Services
 {
-    public class AccountService
+    public class AccountService : IAccountService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _singInManager;
+        private readonly IEmailService _emailService;
 
-        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> singInManager)
+        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> singInManager,IEmailService emailService)
         {
             _userManager = userManager;
             _singInManager = singInManager;
+            _emailService = emailService;
         }
 
         public async Task<AuthenticationResponse> SignInAsync(AuthenticationRequest request)
@@ -88,6 +93,14 @@ namespace Infrastructure.Identity.Services
             }
             
             await _userManager.AddToRoleAsync(newUser, Roles.Admin.ToString());
+            await _emailService.SendAsync(new EmailRequest
+            {
+                From = "Mccool Inventory",
+                To = newUser.Email,
+                Subject = "Mccool Inventory - Correo de Bienvenida",
+                Body = $"<p> Gracias por registrarte a Mccool Inventory, tu plan actaul es {newUser.Plan}</p>"
+                
+            });
 
             return response; 
         }
@@ -142,6 +155,58 @@ namespace Infrastructure.Identity.Services
             return response;
         }
 
+        public async Task<ForgotPasswordResponse> ForgotPasswordAsync(ForgotPasswordRequest request, string origin)
+        {
+            ForgotPasswordResponse response = new() { HasError = false};
+            ApplicationUser user = await _userManager.FindByEmailAsync(request.Email);
+
+            if (user == null)
+            {
+                response.HasError = true;
+                response.Error = $"{request.Email} no se encuentra registrado.";
+                return response;
+            }
+            string uri = await SendForgotPassEmailUri(user,origin);
+            EmailRequest emailRequest = new()
+            {
+                From = "Mccool Inventory System",
+                To = request.Email,
+                Subject = "Mccool Inventory System -Recuperar Contraseña",
+                Body = $"<p>Click al siguiente enlace para resetear tu contraseña </p> <br> {uri}"
+            };
+
+            await _emailService.SendAsync(emailRequest);
+
+            return response;
+
+        }
+        public async Task<ResetPasswordResponse> ResetPasswordAsync(ResetPasswordRequest request)
+        {
+            ResetPasswordResponse response = new() { HasError = false };
+            ApplicationUser user = await _userManager.FindByEmailAsync(request.Email);
+            
+            if (user == null)
+            {
+                response.HasError = true;
+                response.Error = $"{request.Email} no se encuentra registrado en el sistema.";
+                return response;
+            }
+
+
+            request.Token = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(request.Token)); 
+            var result = await _userManager.ResetPasswordAsync(user, request.Token, request.Password);
+
+            if (!result.Succeeded)
+            {
+                response.HasError = true;
+                response.Error = $"Error mientras actualizaba contraseña, por favor intentolo de nuevo.";
+                return response;
+            }
+
+            return response;
+
+        }
+
         private async Task<bool> CheckingIfCanCreate(string userId)
         {
             ApplicationUser user = await _userManager.FindByIdAsync(userId);
@@ -161,6 +226,17 @@ namespace Infrastructure.Identity.Services
             }
 
             return false;
+        }
+
+        private async Task<string> SendForgotPassEmailUri(ApplicationUser user, string origin)
+        {
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+            string route = "/User/ResetPass";
+            Uri uri = new Uri(String.Concat(origin,route));
+            string verificationUri = QueryHelpers.AddQueryString(uri.ToString(), "token", token);
+
+            return verificationUri;
         }
     }
 }

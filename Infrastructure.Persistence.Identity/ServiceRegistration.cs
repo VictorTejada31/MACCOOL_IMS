@@ -1,5 +1,7 @@
-﻿using Infrastructure.Identity.Context;
+﻿using Core.Application.Interfaces.Services;
+using Infrastructure.Identity.Context;
 using Infrastructure.Identity.Entities;
+using Infrastructure.Identity.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -40,6 +42,12 @@ namespace Infrastructure.Persistence.Identity
                 options.AccessDeniedPath = "/User/AccessDenied";
                 
             });
+
+            #endregion
+
+            #region Service 
+
+            services.AddTransient<IAccountService, AccountService>();
 
             #endregion
         }
