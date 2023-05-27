@@ -1,8 +1,9 @@
-﻿namespace Core.Domain.Entities
+﻿using Core.Domain.Commons;
+
+namespace Core.Domain.Entities
 {
-    public class Product
+    public class Product : CommonsProperty
     {
-        public int Id { get; set; }
         public double SalePrice { get; set; }
         public double PurchasePrice { get; set; }
         public int DefaultProductId { get; set; }

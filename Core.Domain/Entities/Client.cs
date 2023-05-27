@@ -1,8 +1,9 @@
-﻿namespace Core.Domain.Entities
+﻿using Core.Domain.Commons;
+
+namespace Core.Domain.Entities
 {
-    public class Client
+    public class Client : CommonsProperty
     {
-        public int Id { get; set; }
         public string FullName { get; set; }
         public string Tel { get; set; }
         public string Owed { get; set; }

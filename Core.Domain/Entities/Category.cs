@@ -1,9 +1,10 @@
 ﻿
+using Core.Domain.Commons;
+
 namespace Core.Domain.Entities
 {
-    public class Category
+    public class Category : CommonsProperty
     {
-        public int Id { get; set; }
         public string Name { get; set; }
 
         //Navegation Property
