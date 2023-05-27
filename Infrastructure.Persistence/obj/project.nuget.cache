@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "J15zeWFN5d80bHLCOixVURJv67AM/tPdaSstm09VATv+Wgcr1kZWOdDgF+xzIgc3v9AZQpupVbCvx/0PFPiXwQ==",
+  "dgSpecHash": "RCc4p9HuEEtAWZLPZJvaRmZ+goncxZPxvDYAPDwb4PG2Gvf99uMH8ZqYfIQbaTK9+7HQ588BuZKyCCEMzkwklQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
