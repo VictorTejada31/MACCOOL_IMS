@@ -20,7 +20,7 @@ namespace Infrastructure.Persistence.Identity
             else
             {
                 services.AddDbContext<IdentityContex>(options => options
-                .UseSqlServer(configuration.GetConnectionString("DefaultConnection"), m => m
+                .UseSqlServer(configuration.GetConnectionString("IdentityConnection"), m => m
                 .MigrationsAssembly(typeof(IdentityContex).Assembly.FullName)));
             }
 
