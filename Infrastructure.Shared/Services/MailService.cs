@@ -1,4 +1,5 @@
 ﻿using Core.Application.Dtos.Email;
+using Core.Application.Interfaces.Services;
 using Core.Domain.Settings;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
@@ -6,10 +7,10 @@ using MimeKit;
 
 namespace Infrastructure.Shared.Services
 {
-    public class MailService
+    public class EmailService : IEmailService
     {
         public MailSetting _mailSetting { get; }
-        public MailService(IOptions<MailSetting> option) {
+        public EmailService(IOptions<MailSetting> option) {
       
             _mailSetting = option.Value;
 
