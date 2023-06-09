@@ -1,0 +1,15 @@
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.AssemblyInfoInputs.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.AssemblyInfo.cs
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\bin\Debug\net6.0\Core.Application.deps.json
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\bin\Debug\net6.0\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.csproj.CopyComplete
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\refint\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\Core.Application.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Application.Domain\obj\Debug\net6.0\ref\Core.Application.dll

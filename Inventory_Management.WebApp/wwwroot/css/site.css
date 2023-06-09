@@ -11,8 +11,25 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
-  margin-bottom: 60px;
+    margin-top: 75px;
+    margin-bottom: 120px;
+    background-image: linear-gradient(to bottom right, #010102,#100629,#1B041E,#140425 );
+    font-family: Arial;
+}
+
+nav {
+    background: #02021C;
+    color: white;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.nav-item{
+    font-size: 10px;
 }

@@ -15,6 +15,7 @@ namespace Application.Domain
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IDefaultProductService, DefaultProductService>();
+            services.AddTransient<IUserService, UserService>();
 
         }
     }

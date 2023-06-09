@@ -1,0 +1,17 @@
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Infrastructure.Identity.deps.json
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Infrastructure.Identity.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Infrastructure.Identity.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.AssemblyInfoInputs.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.AssemblyInfo.cs
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.csproj.CopyComplete
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\refint\Infrastructure.Identity.dll
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\Infrastructure.Identity.pdb
+C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence.Identity\obj\Debug\net6.0\ref\Infrastructure.Identity.dll

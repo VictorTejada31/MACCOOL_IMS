@@ -54,7 +54,7 @@ namespace Core.Application.Mapping
             #region DefaultProducts
 
             CreateMap<DefaultProduct, SaveDefaultProductViewModel>()
-                .ForMember(m => m.Img, op => op.Ignore())
+                //.ForMember(m => m.Img, op => op.Ignore())
                 .ReverseMap()
                 .ForMember(m => m.Products, op => op.Ignore());
 

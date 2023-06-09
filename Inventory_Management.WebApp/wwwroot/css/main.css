@@ -1,0 +1,278 @@
+﻿
+h3{
+    font-size: 30px;
+}
+
+#cardLogin {
+    border-radius: 20%;
+}
+
+input::placeholder {
+    font-size: 16px;
+    opacity: 1;
+}
+
+button{
+    width: 100%;
+    margin: 5px;
+}
+
+.form-control-feedback {
+    position: absolute;
+    padding: 15px;
+    right: 50px;
+    pointer-events: none;
+}
+
+#eye_off {
+    cursor: pointer;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background: #eee;
+}
+
+#passforgot {
+    margin: 5px;
+}
+
+    #passforgot a {
+        text-decoration: none;
+    }
+
+
+.text_header {
+    color: #F600FF;
+    font-size: 50px;
+    text-align:center;
+    display: block;
+}
+.text_body{
+    display:block;
+    text-align: center;
+    color:white;
+    font-size: 70px;
+}
+
+.text_footer{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.btn-primary {
+    margin-top: 15px;
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+    border-radius: 18px;
+    width: 40%;
+    
+}
+
+#subRestriction {
+    display:block;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#choosePlan{
+    color: white;
+    font-size: 35px;
+}
+
+#choosePlanContainer{
+    margin-top: 20%;
+}
+
+#whatsIncluded{
+    margin-top: 30px;
+}
+
+#whatsIncluded{
+    color: white;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+
+
+div ul li {
+    color: rebeccapurple;
+}
+
+li span{
+    color: white;
+}
+
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+#pricePlan {
+    font-size: 45px;
+}
+
+.card {
+    width: 100%;
+    height: 80%;
+}
+
+.btn-secondary {
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+#registerNavBar{
+   background-color: mediumpurple;
+   color: white;
+   border-radius: 25px;
+   font-size: 10px;
+}
+
+#registerIndex_Title{
+    display:block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+#registerIndex_body {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#registerIndex_footer {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.registerIndex_cards {
+    margin-top: 20px;
+    height: 90%;
+    background-image: linear-gradient(to right, #3D1E8D,#391D56,#320E56);
+}
+
+.registerIndex_CardTitle{
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+.registerIndex_CardPrice {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.card-body ul {
+    margin: 50px 0 40px -10px;
+    list-style: none;
+
+}
+
+    .card-body ul li span::before {
+        content: "+";
+        color: white;
+        margin-right: 5px;
+
+
+    }
+
+.registerIndex_CardPriceMonth {
+    font-size: 20px;
+    color: #CFC7DE;
+}
+
+.registerIndex_cardButton {
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+    border-radius: 25px;
+    width: 95%;
+    height: 50px;
+    padding: 13px;
+    color: white;
+    margin: 10px 0 30px 0;
+}
+
+#registerIndex_cards_ul li span {
+    color: #CFC7DE;
+    text-align: left;
+    display: block;
+}
+
+.Register_PlanContainer {
+    background-color: #231340;
+    border-radius: 13px;
+    color: white;
+    height: 50px;
+    padding: 10px;
+}
+
+.RegisterFree_body{
+   float: right;
+   font-size: 17px;
+   padding-top: 8px;
+}
+
+.RegisterFree_title {
+    font-size: 17px;
+}
+
+.bi-pencil-square{
+    margin-left: 12px;
+}
+
+.RegisterFree_Index{
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 25px 0 0 0;
+
+}
+
+.createAccount{
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: mediumpurple;
+    border-color: mediumpurple;
+}
+
+    .btn-danger:hover {
+        background-color: mediumpurple;
+        border-color: mediumpurple;
+    }
+
+a {
+    text-decoration: none;
+    color: white;
+}

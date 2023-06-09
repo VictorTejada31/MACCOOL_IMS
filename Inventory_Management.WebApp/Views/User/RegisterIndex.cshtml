@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Registrar";
+
+}
+
+
+<div class="container-fluid">
+    <div class="col-6 offset-3">
+        <h3>
+            <span id="registerIndex_Title">PASO 1 DE 3</span>
+            <span id="registerIndex_body">Elige tu experiencia Mccool IMS.</span>
+            <span id="registerIndex_footer">Lleva la contabilidad e inventario de forma rápida y sencilla.</span>
+        </h3>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="card registerIndex_cards">
+                <div class="card-body">
+                    <h3>
+                        <span class="registerIndex_CardTitle">Premium</span>
+                        <span class="registerIndex_CardPrice">RD$349.00<span class="registerIndex_CardPriceMonth">/m.</span></span>
+                    </h3>
+                    <ul id="registerIndex_cards_ul">
+                        <li><span>5 cajas</span></li>
+                        <li><span>Productos ilimitados</span></li>
+                        <li><span>Funcionalidades Premium</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer" align="center">
+                    <a class="btn btn registerIndex_cardButton" asp-action="" asp-controller="">ELIGE ESTE PLAN</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card registerIndex_cards">
+                <div class="card-body">
+                    <h3>
+                        <span class="registerIndex_CardTitle">Free</span>
+                        <span class="registerIndex_CardPrice">RD$0.00<span class="registerIndex_CardPriceMonth">/m.</span></span>
+                    </h3>
+                    <ul id="registerIndex_cards_ul">
+                        <li><span>1 cajas</span></li>
+                        <li><span>Productos Limitados</span></li>
+                       
+                    </ul>
+                </div>
+                <div class="card-footer" align="center">
+                    <a class="btn btn registerIndex_cardButton" asp-action="FreeRegister" asp-controller="User">ELIGE ESTE PLAN</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 offset-3">
+            <div class="card registerIndex_cards">
+                <div class="card-body">
+                    <h3>
+                        <span class="registerIndex_CardTitle">Premium</span>
+                        <span class="registerIndex_CardPrice">RD$2,899.00<span class="registerIndex_CardPriceMonth">/12m.</span></span>
+                    </h3>
+                    <ul id="registerIndex_cards_ul">
+                        <li><span>5 cajas</span></li>
+                        <li><span>Productos ilimitados</span></li>
+                        <li><span>Funcionalidades Premium</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer" align="center">
+                    <a class="btn btn registerIndex_cardButton" asp-action="" asp-controller="">ELIGE ESTE PLAN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

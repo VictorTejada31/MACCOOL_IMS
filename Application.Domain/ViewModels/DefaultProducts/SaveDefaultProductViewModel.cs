@@ -12,7 +12,7 @@ namespace Core.Application.ViewModels.DefaultProducts
         [DataType(DataType.Text)]
         public string Description { get; set; }
 
-        public IFormFile ? Img { get; set; }
+        //public IFormFile ? Img { get; set; }
 
         [Required(ErrorMessage = "Campo Requerido.")]
         [DataType(DataType.Text)]

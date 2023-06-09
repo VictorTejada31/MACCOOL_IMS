@@ -74,7 +74,6 @@ namespace Infrastructure.Identity.Services
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Email = request.Email,
-                IdCard = request.IdCard,
                 isOnline = false,
                 LastConnection = DateTime.Now,
                 EmailConfirmed = true,
