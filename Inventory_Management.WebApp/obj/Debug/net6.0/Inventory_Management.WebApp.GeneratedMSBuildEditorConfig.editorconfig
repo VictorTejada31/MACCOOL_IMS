@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Inventory_Management.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Client.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/DefaultProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVmYXVsdFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

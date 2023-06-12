@@ -60,7 +60,6 @@ namespace Infrastructure.Identity.Context
                 options.Property(user => user.CretedBy).IsRequired(false).HasDefaultValueSql("Itselft");
                 options.Property(user => user.FirstName).IsRequired(true).HasMaxLength(70);
                 options.Property(user => user.LastName).IsRequired(true).HasMaxLength(70);
-                options.Property(user => user.IdCard).IsRequired(true).HasMaxLength(13);
                 options.Property(user => user.isOnline).IsRequired(true);
                 options.Property(user => user.LastConnection).IsRequired(true);
             });

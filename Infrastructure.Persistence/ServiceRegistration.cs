@@ -9,7 +9,7 @@ namespace Infrastructure.Persistence
 {
     public static class ServiceRegistration
     {
-        public static void AddPersistenceInfras(IServiceCollection services, IConfiguration configuration)
+        public static void AddPersistenceInfras(this IServiceCollection services, IConfiguration configuration)
         {
             #region Context
 

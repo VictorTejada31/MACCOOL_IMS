@@ -1,7 +1,9 @@
 ﻿using Core.Application.ViewModels.DefaultProducts;
+using Core.Domain.Entities;
+
 namespace Core.Application.Interfaces.Services
 {
-    internal interface IDefaultProductService : IGenericService<SaveDefaultProductViewModel, DefaultProductViewModel>
+    public interface IDefaultProductService : IGenericService<SaveDefaultProductViewModel, DefaultProductViewModel, DefaultProduct>
     {
     }
 }

@@ -13,7 +13,6 @@ namespace Infrastructure.Identity.Seeds
                 FirstName = "John",
                 LastName = "Doe",
                 Email = "admin@system.com",
-                IdCard = "000-0000000-0",
                 isOnline = false,
                 LastConnection = DateTime.Now,
                 UserName = "JohnDoe",

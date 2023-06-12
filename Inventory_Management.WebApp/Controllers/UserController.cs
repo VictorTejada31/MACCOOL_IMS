@@ -9,10 +9,7 @@ namespace Inventory_Management.WebApp.Controllers
     {
 
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
-        {
-            _userService = userService;
-        }
+       
 
         public IActionResult Index()
         {

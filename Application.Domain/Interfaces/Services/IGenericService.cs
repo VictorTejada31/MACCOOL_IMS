@@ -1,9 +1,10 @@
 ﻿
 namespace Core.Application.Interfaces.Services
 {
-    public interface IGenericService<SaveViewModel,ViewModel>
+    public interface IGenericService<SaveViewModel,ViewModel,Entity>
         where SaveViewModel : class
         where ViewModel : class
+        where Entity : class
     {
         Task<SaveViewModel> AddAsync(SaveViewModel saveView);
         Task<SaveViewModel> UpdateAsync(SaveViewModel saveView, int Id);

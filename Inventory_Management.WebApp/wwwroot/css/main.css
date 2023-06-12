@@ -276,3 +276,164 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.HorizonNavBar {
+    background: #02021C;
+    color: white;
+    height: 60px;
+    width: 100%;
+   
+}
+
+.sidebar {
+    background: #02021C;
+    width: 100%;
+    height: 650px;
+    
+}
+
+.sidebar ul li a{
+    font-size: 18px;
+}
+
+.dropdown {
+    padding-left: 80%;
+    padding-top: 10px;
+}
+
+.sidebarTitle {
+    color: #F600FF;
+    display: block;
+    padding-left: 35px;
+    font-size: 30px;
+}
+
+#home-collapse{
+    margin-left: 50px;
+}
+
+.indexCards {
+    background-image: linear-gradient(to right, #3D1E8D,#391D56,#320E56);
+    color: white;
+}
+
+.mygroup {
+    margin-top: 15px;
+    width: 70%;
+}
+
+    .mygroup input {
+        height: 35px;
+        border-radius: 15px;
+    }
+
+.my-serch-button {
+    margin-top: -2px;
+    margin-left: -1px;
+    height: 38px;
+    background-color: mediumpurple;
+    border-bottom-right-radius: 15px;
+
+}
+
+.search-div{
+    margin-bottom: 35px;
+}
+
+.defaultproduct-cards {
+    height: 98%;
+    width: 17.5rem;
+    border-radius: 12px;
+}
+
+.defaultproduct-cards p,h5 {
+    text-align: left;
+}
+
+.defaultproduct-cards h5{
+    font-size: 22px;
+    margin-top: 13px;
+}
+
+.defaultproduct-cards span{
+    display: block;
+}
+
+.code-bar-span {
+    margin-top: 10px;
+}
+
+.defaultproduct-cards-button{
+    background-color: mediumpurple;
+    border-color: mediumpurple;
+    width: 70%;
+    border-radius: 18px;
+}
+
+
+.card-img-top{
+    height: 130px;
+    width: 130px;
+    display: block;
+    width: 100%;
+}
+
+.add-new-container{
+    margin-top: 10px;
+}
+
+    .add-new-container button {
+        background-color: #900295;
+        border-color:  #900295;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+.table-container{
+    margin-top: 20px;
+}
+
+.table-container table {
+    color: white;
+}
+
+.thead-dark {
+    background-image: linear-gradient(to right, #3D1E8D,#391D56,#320E56);
+    height: 50px;
+}
+
+.table-container table tbody {
+    background-color: white;
+}
+
+.table-container a,td {
+    color: lightslategray;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #3D1E8D,#391D56,#320E56);
+    color: white;
+}
+
+.modal-footer{
+    height: 50px;
+}
+
+.close{
+    width: 35px;
+    border-color: white;
+}
+
+.modal-footer button{
+    background-color: mediumpurple;
+    border-color: mediumpurple;
+    border-radius: 10px;
+    width: 70%;
+    margin-right: 73px;
+    height: 40px;
+}
+
+.myContainerBody{
+    float: left;
+    width: 75%;
+}
