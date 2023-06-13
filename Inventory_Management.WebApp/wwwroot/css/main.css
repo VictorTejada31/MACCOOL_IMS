@@ -437,3 +437,42 @@ a {
     float: left;
     width: 75%;
 }
+
+.btn-outline-primary{
+    border-color: rebeccapurple;
+}
+
+    .btn-outline-primary:hover {
+        background-color: rebeccapurple;
+        border-color: rebeccapurple;
+    }
+
+td button {
+    width: 40%;
+}
+
+.confirmationDialog {
+    display: flex;
+    align-content: center;
+    height: 60px;
+    
+}
+
+    .confirmationDialog button {
+        width: 20%;
+        margin-right: 20px;
+    }
+
+.confirmationDialog a {
+    width: 20%;
+    background-color: mediumpurple;
+    border-color: mediumpurple;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 130px;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 21px;
+}

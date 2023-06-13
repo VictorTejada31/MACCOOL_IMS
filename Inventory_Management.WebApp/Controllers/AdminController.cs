@@ -29,7 +29,7 @@ namespace Inventory_Management.WebApp.Controllers
         public async Task<IActionResult> Client()
         {
             ViewBag.Clients = await _clientService.GetAllAsync();
-            return View();
+            return View(new SaveClientViewModel());
         }
 
         [HttpPost]
@@ -42,6 +42,41 @@ namespace Inventory_Management.WebApp.Controllers
 
             await _clientService.AddAsync(viewModel);
             return RedirectToRoute(new { Controller = "Admin", Action = "Client" });
+        }
+
+        public async Task<IActionResult> DeleteClient(int id)
+        {
+            await _clientService.DeleteAsync(id);
+            return RedirectToRoute(new { Controller = "Admin", Action = "Client" });
+        }
+
+        public async Task<IActionResult> UpdateClient(int id)
+        {
+            var client = await _clientService.GetById(id);
+            SaveClientViewModel viewModel = new()
+            {
+                FullName = client.FullName,
+                IdCard = client.IdCard,
+                Owed = client.Owed,
+                Tel = client.Tel,
+                Id = client.Id
+            };
+
+            ViewBag.Clients = await _clientService.GetAllAsync();
+            return View("Client", viewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateClient(SaveClientViewModel viewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(viewModel);
+            }
+
+            await _clientService.UpdateAsync(viewModel, (int)viewModel.Id);
+            return RedirectToRoute(new { Controller = "Admin", Action = "Client" });
+
         }
     }
 }
