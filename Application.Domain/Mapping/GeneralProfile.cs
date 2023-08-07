@@ -1,8 +1,12 @@
 ﻿using AutoMapper;
+using Core.Application.Dtos.Account;
+using Core.Application.ViewModels.Admin;
 using Core.Application.ViewModels.Category;
 using Core.Application.ViewModels.Client;
+using Core.Application.ViewModels.DashBoard;
 using Core.Application.ViewModels.DefaultProducts;
 using Core.Application.ViewModels.Product;
+using Core.Application.ViewModels.Users;
 using Core.Domain.Entities;
 
 namespace Core.Application.Mapping
@@ -62,6 +66,43 @@ namespace Core.Application.Mapping
                 .ReverseMap()
                 .ForMember(m => m.Products, op => op.Ignore());
 
+            #endregion
+
+            #region User
+
+            CreateMap<RegisterRequest, RegisterFreeViewModel>()
+                .ForMember(m => m.ConfirmPassword, op => op.Ignore())
+                .ForMember(m => m.HasError, op => op.Ignore())
+                .ForMember(m => m.Error, op => op.Ignore())
+                .ReverseMap();
+
+            CreateMap<AuthenticationRequest, LoginViewModel>()
+                .ForMember(m => m.HasError, op => op.Ignore())
+                .ForMember(m => m.Error, op => op.Ignore())
+                .ReverseMap();
+
+            #region Cashier
+
+            CreateMap<RegisterCashierRequest, RegisterCashierViewModel>()
+                .ReverseMap();
+
+            CreateMap<CashierModelResponse, CashierViewModel>()
+                .ReverseMap();
+
+            CreateMap<UserByIdResponse, EditCashierViewModel>()
+                .ReverseMap();
+
+            CreateMap<RegisterCashierRequest, EditCashierViewModel>()
+                .ReverseMap();
+            #endregion
+
+
+            #endregion
+
+            #region DashBoard
+
+            CreateMap<DashBoard, SaveDashBoardViewModel>()
+                .ReverseMap();
             #endregion
 
         }

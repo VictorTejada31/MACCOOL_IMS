@@ -12,5 +12,8 @@ namespace Core.Application.ViewModels.Product
         public string Category { get; set; }
         public double SalePrice { get; set; }
         public double PurchasePrice { get; set; }
+        public int Amount { get; set; }
+        public int DefaultProudctId { get; set; }
+        public string CreatedBy { get; set; }
     }
 }

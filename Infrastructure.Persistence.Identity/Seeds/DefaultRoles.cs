@@ -9,6 +9,7 @@ namespace Infrastructure.Identity.Seeds
         {
             await roleManager.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Cashier.ToString()));
+            await roleManager.CreateAsync(new IdentityRole(Roles.Developer.ToString()));
         }
     }
 }

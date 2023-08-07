@@ -57,7 +57,7 @@ namespace Infrastructure.Identity.Context
 
             builder.Entity<ApplicationUser>(options =>
             {
-                options.Property(user => user.CretedBy).IsRequired(false).HasDefaultValueSql("Itselft");
+                options.Property(user => user.CretedBy).IsRequired(false);
                 options.Property(user => user.FirstName).IsRequired(true).HasMaxLength(70);
                 options.Property(user => user.LastName).IsRequired(true).HasMaxLength(70);
                 options.Property(user => user.isOnline).IsRequired(true);

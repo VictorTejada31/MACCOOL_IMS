@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HM7/Hm1FyBNaVSd5ROJ1IVi2Dts16nYlGQwtPXjxBVxb66LRKajx8uwwEKeiI6DHsTlzy2uFtXW+P4UY+VAS7g==",
+  "dgSpecHash": "I8VVCBWyqoLBt7+sAhL9jWHYzZ+LSCJrtKXEDV3uPREFgBm1VMGyZGtAyBUWlbwRKd6t0dgxJIphU2YK1d+jfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

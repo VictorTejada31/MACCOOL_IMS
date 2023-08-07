@@ -1,8 +1,13 @@
 ﻿using Core.Application.Dtos.Account;
 using Core.Application.Dtos.Email;
 using Core.Application.Enums;
+using Core.Application.Helpers;
 using Core.Application.Interfaces.Services;
+using Core.Application.ViewModels.DashBoard;
+using Core.Application.ViewModels.Users;
+using Core.Domain.Entities;
 using Infrastructure.Identity.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
@@ -15,12 +20,22 @@ namespace Infrastructure.Identity.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _singInManager;
         private readonly IEmailService _emailService;
+        private readonly IDashBoardService _boardService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly UserViewModel _userViewModel;
 
-        public AccountService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> singInManager,IEmailService emailService)
+        public AccountService(UserManager<ApplicationUser> userManager, 
+            SignInManager<ApplicationUser> singInManager,
+            IEmailService emailService, 
+            IDashBoardService dashBoardService,
+            IHttpContextAccessor httpContext)
         {
             _userManager = userManager;
             _singInManager = singInManager;
             _emailService = emailService;
+            _boardService = dashBoardService;
+            _httpContextAccessor = httpContext;
+            _userViewModel = _httpContextAccessor.HttpContext.Session.Get<UserViewModel>("user");
         }
 
         public async Task<AuthenticationResponse> SignInAsync(AuthenticationRequest request)
@@ -35,6 +50,7 @@ namespace Infrastructure.Identity.Services
                 return response;
             }
 
+
             var result = await _singInManager.PasswordSignInAsync(user, request.Password,true,false);
             if (!result.Succeeded)
             {
@@ -43,11 +59,19 @@ namespace Infrastructure.Identity.Services
                 return response;
             }
 
+            if (!user.EmailConfirmed)
+            {
+                response.HasError = true;
+                response.Error = $"{request.Email} no se encuentra activado, hable con su administrador.";
+                return response;
+            }
+
             response.FirstName = user.FirstName;
             response.LastName = user.LastName;
             response.Email = user.Email;
             response.Id = user.Id;
             response.EmailConfirmed = user.EmailConfirmed;
+            response.CreatedBy = user.CretedBy;
             var roles = await _userManager.GetRolesAsync(user).ConfigureAwait(false);
             response.Roles = roles.ToList();
 
@@ -80,6 +104,7 @@ namespace Infrastructure.Identity.Services
                 UserName = request.Email,
                 PhoneNumber = request.PhoneNumber,
                 Plan = request.Plan,
+                CretedBy = "Itself"
             };
 
             var result = await _userManager.CreateAsync(newUser,request.Password);
@@ -101,6 +126,18 @@ namespace Infrastructure.Identity.Services
                 
             });
 
+            SaveDashBoardViewModel saveDashBoardViewModel = new SaveDashBoardViewModel() { 
+                    Today = 0,
+                    LastMonth = 0,
+                    ThisMonth = 0,
+                    Yesterday = 0,
+                    ThisMonthDate = DateTime.Now,
+                    TodayDate = DateTime.Now,
+                    UserId = newUser.Id,
+            };
+
+            await _boardService.AddAsync(saveDashBoardViewModel);
+
             return response; 
         }
 
@@ -108,12 +145,12 @@ namespace Infrastructure.Identity.Services
         {
             RegisterResponse response = new() { HasError = true };
 
-            if (!await CheckingIfCanCreate(request.CretedBy))
-            {
-                response.HasError = true;
-                response.Error = "Ya estas al limite de cajeros para agregar otro cajero adquiera el plan premium.";
-                return response;
-            }
+           // if (await CheckingIfCanCreate(_userViewModel.Id))
+            //{
+              //  response.HasError = true;
+               // response.Error = "Ya estas al limite de cajeros para agregar otro cajero adquiera el plan premium.";
+               // return response;
+           // }
 
             ApplicationUser user = await _userManager.FindByEmailAsync(request.Email);
 
@@ -131,10 +168,12 @@ namespace Infrastructure.Identity.Services
                 Email = request.Email,
                 isOnline = false,
                 LastConnection = DateTime.Now,
-                EmailConfirmed = false,
+                EmailConfirmed = true,
                 UserName = request.Email,
-                PhoneNumber = request.PhoneNumber,
-                CretedBy = request.CretedBy,
+                PhoneNumber = request.Tel,
+                CretedBy = _userViewModel.Id,
+                Plan = Roles.Cashier.ToString(),
+                
 
             };
 
@@ -148,7 +187,7 @@ namespace Infrastructure.Identity.Services
                 return response;
             }
 
-            await _userManager.AddToRoleAsync(newUser, Roles.Admin.ToString());
+            await _userManager.AddToRoleAsync(newUser, Roles.Cashier.ToString());
 
             return response;
         }
@@ -205,6 +244,152 @@ namespace Infrastructure.Identity.Services
 
         }
 
+        public async Task<List<CashierModelResponse>> GetAllCashier(string userId)
+        {
+            var clients =  await _userManager.Users.Where(c => c.CretedBy == userId).ToListAsync();
+            List<CashierModelResponse> response = new();
+
+            foreach (var client in clients)
+            {
+                CashierModelResponse cashierModelResponse = new CashierModelResponse()
+                {
+                    isActive = client.EmailConfirmed,
+                    isOnline = client.isOnline,
+                    Name = $"{client.FirstName} {client.LastName}",
+                    CashierId = client.Id
+                };
+
+                response.Add(cashierModelResponse);
+            }
+
+            return response;
+            
+        }
+
+
+        public async Task<UserByIdResponse> GetCashierById(string userId)
+        {
+            var client = await _userManager.FindByIdAsync(userId);
+
+            UserByIdResponse response = new UserByIdResponse()
+            {
+                Id = client.Id,
+                Email = client.Email,
+                UserName = client.UserName,
+                Tel = client.PhoneNumber,
+                FirstName = client.FirstName,
+                LastName = client.LastName
+            };
+
+            return response;
+
+        }
+
+        public async Task<RegisterResponse> UpdateCashier(string userId, RegisterCashierRequest request)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            RegisterResponse response = new RegisterResponse();
+            var findbyEmail = await _userManager.FindByEmailAsync(request.Email);
+
+            if (findbyEmail != null && user.Email != request.Email)
+            {
+                response.HasError = true;
+                response.Error = "Email registrado, utilize otra direccion de correo.";
+                return response;
+            }
+
+            var findbyUserName = await _userManager.FindByNameAsync(request.UserName);
+
+
+            if (findbyUserName != null && user.UserName != request.UserName)
+            {
+                response.HasError = true;
+                response.Error = "Nombre de usuario registrado, utilize otro nombre de usuario.";
+                return response;
+            }
+
+
+            user.FirstName = request.FirstName;
+            user.LastName = request.LastName;
+            user.Email = request.Email;
+            user.UserName = request.UserName;
+            user.PhoneNumber = request.Tel;
+
+            await _userManager.UpdateAsync(user);
+            
+            if(request.Password != null)
+            {
+                string token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var result = await _userManager.ResetPasswordAsync(user,token,request.Password);
+
+                if (!result.Succeeded)
+                {
+                    response.HasError = true;
+                    response.Error = "Error al cambiar contraseña";
+                    return response;
+                }
+            }
+
+            return response;
+
+        }
+
+
+        public async Task<bool> OnlineStatus(string userId, bool isOn)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (isOn)
+            {
+                user.isOnline = true;
+            }
+            else
+            {
+                user.isOnline = false;
+            }
+
+            await _userManager.UpdateAsync(user);
+            return true;
+
+
+
+        }
+
+        public async Task<ChangeCashierStateResponse> ChangeCashierState(string userId)
+        {
+            ChangeCashierStateResponse response = new() { HasError = false};
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user.EmailConfirmed)
+            {
+                user.EmailConfirmed = false;
+                var _result = await _userManager.UpdateAsync(user);
+                if (!_result.Succeeded)
+                {
+                    response.HasError = true;
+                    return response;
+                }
+                
+                response.Message = "Cuenta desactivada correctamente.";
+            }
+            else
+            {
+
+                string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                var result = await _userManager.ConfirmEmailAsync(user, token);
+                response.Message = "Cuenta activada correctamente.";
+            }
+
+            return response; 
+
+
+        }
+
+        public async Task DeleteCashier(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            await _userManager.DeleteAsync(user);
+        }
+
         private async Task<bool> CheckingIfCanCreate(string userId)
         {
             ApplicationUser user = await _userManager.FindByIdAsync(userId);
@@ -236,5 +421,7 @@ namespace Infrastructure.Identity.Services
 
             return verificationUri;
         }
+
+
     }
 }

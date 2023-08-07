@@ -9,65 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Inventory_Management.WebApp
 build_property.RootNamespace = Inventory_Management.WebApp
-build_property.ProjectDir = C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Inventory_Management.WebApp\
+build_property.ProjectDir = C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Inventory_Management.WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Inventory_Management.WebApp
+build_property.MSBuildProjectDirectory = C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Inventory_Management.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Client.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/CashRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FzaFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Client.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/DefaultProducts.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/DefaultProductResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVmYXVsdFByb2R1Y3RSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/DefaultProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVmYXVsdFByb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Index.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/EditCashRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhc2hSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Home/Index.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Admin/ProductResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdFJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Cashier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaGllclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Developer/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyXENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Developer/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyXFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Developer/ProductResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyXFByb2R1Y3RSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Shared/Error.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/User/FreeRegister.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/FreeRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGcmVlUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/User/Index.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/User/Login.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/User/RegisterIndex.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/PremiumRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcmVtaXVtUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/RegisterIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/User/ResetPassword.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/User/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/_ViewImports.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/_ViewStart.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/victo/Desktop/Proyecto Final TDS/Inventory_Management/Inventory_Management.WebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/victo/Desktop/Proyecto Final/Inventory_Management/Inventory_Management.WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8eleej71za

@@ -1,0 +1,365 @@
+﻿@using Core.Application.ViewModels.DashBoard;
+
+@model DashBoardViewModel
+@{
+    ViewData["Title"] = "Dash Board";
+}
+
+
+<div class="container-fluid">
+    <div class="col-12">
+        <div class="HorizonNavBar">
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>John Doe</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" asp-action="LogOut" asp-controller="User">Cerrar Session</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-0">
+        <div class="col-4 px-1">
+            <div class="card dash-card-container">
+                <div class="card-body">
+                    <div class="my-dashboard-cardContainer">
+                        <h5 class="card-title dash-card-title">
+                            <span class="dash-span-title">Este Mes</span>
+                        </h5>
+                        <p class="card-text dash-card-text placeholder-glow">
+                            <span class="dash-span-current">$@Model.ThisMonth</span>
+                            <span class="dash-span-porcent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                </svg>@Model.ThisMonthPorcent%
+                            </span>
+                            <span class="dash-span-text">Ganancia Total</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 px-1">
+            <div class="card dash-card-container">
+                <div class="card-body">
+                    <div class="my-dashboard-cardContainer">
+                        <h5 class="card-title dash-card-title">
+                            <span class="dash-span-title">Hoy</span>
+                        </h5>
+                        <p class="card-text dash-card-text placeholder-glow">
+                            <span class="dash-span-current">$@Model.Today</span>
+                            <span class="dash-span-porcent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                </svg>@Model.TodayPorcent%
+                            </span>
+                            <span class="dash-span-text">Ganancia Total</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4  px-1">
+            <div class="card dash-card-container">
+                <div class="card-body">
+                    <div class="my-dashboard-cardContainer">
+                        <h5 class="card-title dash-card-title">
+                            <span class="dash-span-title">Productos</span>
+                        </h5>
+                        <p class="card-text dash-card-text placeholder-glow">
+                            <span class="dash-span-current">@Model.Products</span>
+                            <span class="dash-span-porcent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                </svg>2%
+                            </span>
+                            <span class="dash-span-text">Venta Total</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-0 chats-container">
+        <div class="col-6 px-1">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/data.js"></script>
+            <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
+        </div>
+        <div class="col-6 px-1">
+            <div class="card">
+                <div class="card-header" style="background-color: #900295;">
+                    <h4 class="card-title text-white text-center" style="font-weight: bold;">Alerta Productos</h4>
+                </div>
+                <div class="card-body overflow-auto">
+                    <div class="productAlert-container">
+                        @foreach(var item in Model.AlertProduct){
+                            <div>
+                                <div class="productAlert-left">
+                                    <img src="@item.Img" alt="product" />
+                                </div>
+                                <div class="productAlert-right">
+                                    <p class="card-text productAlert-text">
+                                        <span><strong>@item.Name</strong> - @item.BarCode</span>
+                                        <span>Restantes:<strong>@item.Amount</strong></span>
+                                        <span class="productAlert-circle" style="color: red">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr />
+                        }
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            align: 'left',
+            text: '3 Productos Mas Vendidos'
+        },
+        subtitle: {
+            align: 'left',
+            text: 'En esta grafica se muestra el % de los 3 productos mas vendido.'
+        },
+        accessibility: {
+            announceNewData: {
+                enabled: true
+            }
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Total de productos'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+
+        series: [
+            {
+                name: "Productos",
+                colorByPoint: true,
+                data: [
+
+                    {
+                        name: "Coca Cola",
+                        y: 2,
+                        drilldown: "Cuenta de ahorros"
+                    },
+                    {
+                        name: "Arroz",
+                        y: 3,
+                        drilldown: "Cuenta de ahorros"
+                    },
+                    {
+                        name: "Pollo",
+                        y: 4,
+                        drilldown: "Cuenta de ahorros"
+                    }
+                ]
+            }
+        ],
+        drilldown: {
+            breadcrumbs: {
+                position: {
+                    align: 'right'
+                }
+            },
+            series: [
+                {
+                    name: "Cuenta de ahorros",
+                    id: "ahorros",
+                    data: [
+                        [
+                            "v65.0",
+                            0.1
+                        ],
+                        [
+                            "v64.0",
+                            1.3
+                        ],
+                        [
+                            "v63.0",
+                            53.02
+                        ],
+                        [
+                            "v62.0",
+                            1.4
+                        ],
+                        [
+                            "v61.0",
+                            0.88
+                        ],
+                        [
+                            "v60.0",
+                            0.56
+                        ],
+                        [
+                            "v59.0",
+                            0.45
+                        ],
+                        [
+                            "v58.0",
+                            0.49
+                        ],
+                        [
+                            "v57.0",
+                            0.32
+                        ],
+                        [
+                            "v56.0",
+                            0.29
+                        ],
+                        [
+                            "v55.0",
+                            0.79
+                        ],
+                        [
+                            "v54.0",
+                            0.18
+                        ],
+                        [
+                            "v51.0",
+                            0.13
+                        ],
+                        [
+                            "v49.0",
+                            2.16
+                        ],
+                        [
+                            "v48.0",
+                            0.13
+                        ],
+                        [
+                            "v47.0",
+                            0.11
+                        ],
+                        [
+                            "v43.0",
+                            0.17
+                        ],
+                        [
+                            "v29.0",
+                            0.26
+                        ]
+                    ]
+                },
+                {
+                    name: "Tarjeta de credito",
+                    id: "Credito",
+                    data: [
+                        [
+                            "v58.0",
+                            1.02
+                        ],
+                        [
+                            "v57.0",
+                            7.36
+                        ],
+                        [
+                            "v56.0",
+                            0.35
+                        ],
+                        [
+                            "v55.0",
+                            0.11
+                        ],
+                        [
+                            "v54.0",
+                            0.1
+                        ],
+                        [
+                            "v52.0",
+                            0.95
+                        ],
+                        [
+                            "v51.0",
+                            0.15
+                        ],
+                        [
+                            "v50.0",
+                            0.1
+                        ],
+                        [
+                            "v48.0",
+                            0.31
+                        ],
+                        [
+                            "v47.0",
+                            0.12
+                        ]
+                    ]
+                },
+                {
+                    name: "Prestamo",
+                    id: "prestamo",
+                    data: [
+                        [
+                            "v11.0",
+                            6.2
+                        ],
+                        [
+                            "v10.0",
+                            0.29
+                        ],
+                        [
+                            "v9.0",
+                            0.27
+                        ],
+                        [
+                            "v8.0",
+                            0.47
+                        ]
+                    ]
+                },
+
+
+            ]
+        }
+    });
+</script>

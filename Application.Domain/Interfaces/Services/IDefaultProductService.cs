@@ -5,5 +5,6 @@ namespace Core.Application.Interfaces.Services
 {
     public interface IDefaultProductService : IGenericService<SaveDefaultProductViewModel, DefaultProductViewModel, DefaultProduct>
     {
+        Task<List<DefaultProductViewModel>> GetAllWithInclude();
     }
 }

@@ -2,7 +2,7 @@
     ViewData["Title"] = "Mccool IMS";
 }
 
-<div class="container-fluid">
+<div class="container-fluid" id="homepageUserContainer">
     <div class="row">
         <div class="col-6 offset-3">
             <h3>
@@ -12,7 +12,7 @@
             </h3>
 
             <div align="center">
-                <a class="btn btn-primary" id="btnSubs" href="#">REGISTRATE AHORA</a>
+                <a class="btn btn-primary" asp-action="PremiumRegister" asp-controller="User">REGISTRATE AHORA</a>
             </div>
             <span id="subRestriction">*Aplica al plan prepago anual.</span>
         </div>
@@ -20,50 +20,37 @@
             <div class="row">
                 <div align="center" id="choosePlanContainer">
                     <h3 id="choosePlan">Elige tu plan</h3>
-                    <h4 id="whatsIncluded">¿QUÉ ESTÁ INCLUIDO?</h4>
                 </div>
                 <div class="col-4">
-                    <ul>
-                        <li><span> 1 sola caja</span></li>
-                        <li><span>Producto Limitados</span></li>
-                        <li></li>
-                    </ul>
+                    
                     <div class="card indexCards">
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">Free</h5>
                             <span id="pricePlan">RD$ 0.00</span>
-                            <p>Tiempo ilimitado*</p>
-                            <a class="btn btn-secondary">ELIGE ESTE PLAN</a>
+                            <p>Prueba Gratis 15 Dias.</p>
+                            <a class="btn btn-secondary" asp-action="FreeRegister" asp-controller="User">ELIGE ESTE PLAN</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <ul>
-                        <li><span>Hata 5 cajas</span></li>
-                        <li><span>Productos Ilimitados</span></li>
-                        <li><span>Funcionalidades exclusivas.</span></li>
-                    </ul>
+                    
                     <div class="card indexCards">
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">Premium</h5>
                             <span id="pricePlan">RD$ 2,899.00</span>
                             <p>12 meses*</p>
-                            <a class="btn btn-secondary">ELIGE ESTE PLAN</a>
+                            <a class="btn btn-secondary" asp-action="PremiumRegister" asp-controller="User">ELIGE ESTE PLAN</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <ul>
-                        <li><span>Hata 5 cajas</span></li>
-                        <li><span>Productos Ilimitados</span></li>
-                        <li><span>Funcionalidades exclusivas.</span></li>
-                    </ul>
+          
                     <div class="card indexCards">
                         <div class="card-body">
                             <h5 class="card-title placeholder-glow">Premium</h5>
                             <span id="pricePlan">RD$ 349.00</span>
                             <p>1 mes*</p>
-                            <a class="btn btn-secondary">ELIGE ESTE PLAN</a>
+                            <a class="btn btn-secondary" asp-action="PremiumRegister" asp-controller="User">ELIGE ESTE PLAN</a>
                         </div>
                     </div>
                 </div>

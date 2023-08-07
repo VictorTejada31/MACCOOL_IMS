@@ -15,3 +15,88 @@ C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Pe
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.dll
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.dll
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.dll
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.pdb
+E:\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.pdb
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.dll
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+E:\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Persistence\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll

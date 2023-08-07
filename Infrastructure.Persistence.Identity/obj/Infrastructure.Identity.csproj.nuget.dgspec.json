@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj": {}
+    "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\Core.Application.csproj": {
+    "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\Core.Application.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\Core.Application.csproj",
         "projectName": "Core.Application",
-        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\Core.Application.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\Core.Application.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj"
+              "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj"
               }
             }
           }
@@ -52,9 +52,29 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -73,18 +93,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj": {
+    "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
         "projectName": "Core.Domain",
-        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\Core.Domain.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Core.Domain\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,18 +148,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj": {
+    "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj",
         "projectName": "Infrastructure.Identity",
-        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Infrastructure.Persistence.Identity\\Infrastructure.Identity.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Infrastructure.Persistence.Identity\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Infrastructure.Persistence.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,8 +176,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\Core.Application.csproj": {
-                "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final TDS\\Inventory_Management\\Application.Domain\\Core.Application.csproj"
+              "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\Core.Application.csproj": {
+                "projectPath": "C:\\Users\\victo\\Desktop\\Proyecto Final\\Inventory_Management\\Application.Domain\\Core.Application.csproj"
               }
             }
           }
@@ -172,6 +192,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.20, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -213,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

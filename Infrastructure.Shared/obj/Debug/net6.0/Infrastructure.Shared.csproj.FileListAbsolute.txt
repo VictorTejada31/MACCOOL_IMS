@@ -15,3 +15,88 @@ C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Sh
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.deps.json
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.dll
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.pdb
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.dll
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.dll
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.pdb
+E:\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.pdb
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.AssemblyReference.cache
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfoInputs.cache
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfo.cs
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CoreCompileInputs.cache
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CopyComplete
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.dll
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
+E:\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.deps.json
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CopyComplete
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Desktop\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.deps.json
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CopyComplete
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Pictures\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.deps.json
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CopyComplete
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.deps.json
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.csproj.CopyComplete
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\refint\Infrastructure.Shared.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\Infrastructure.Shared.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Infrastructure.Shared\obj\Debug\net6.0\ref\Infrastructure.Shared.dll

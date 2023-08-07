@@ -15,7 +15,8 @@ namespace Core.Application
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IDefaultProductService, DefaultProductService>();
-           // services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IDashBoardService,DashBoardService>();
 
         }
     }

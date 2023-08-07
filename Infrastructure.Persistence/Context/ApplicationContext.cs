@@ -11,6 +11,8 @@ namespace Infrastructure.Persistence.Context
         public DbSet<Product> Products { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<DashBoard> DashBoard { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +22,8 @@ namespace Infrastructure.Persistence.Context
             modelBuilder.Entity<Product>().ToTable("Products");
             modelBuilder.Entity<Client>().ToTable("Clients");
             modelBuilder.Entity<Category>().ToTable("Categories");
+            modelBuilder.Entity<DashBoard>().ToTable("DashBoard");
+
 
 
             #endregion
@@ -30,6 +34,8 @@ namespace Infrastructure.Persistence.Context
             modelBuilder.Entity<Product>().HasKey(p => p.Id);
             modelBuilder.Entity<Client>().HasKey(c => c.Id);
             modelBuilder.Entity<Category>().HasKey(c => c.Id);
+            modelBuilder.Entity<DashBoard>().HasKey(d => d.Id);
+
 
 
             #endregion
@@ -79,13 +85,33 @@ namespace Infrastructure.Persistence.Context
             modelBuilder.Entity<Product>().Property(p => p.PurchasePrice)
              .IsRequired();
 
+            modelBuilder.Entity<Product>().Property(p => p.UserId)
+             .IsRequired();
+
             #endregion
 
+            #region DefaultProduct
+
+            modelBuilder.Entity<DefaultProduct>().Property(d => d.Img).IsRequired(false);
+
+            #endregion
 
             #region Categories
 
             modelBuilder.Entity<Category>().Property(n => n.Name)
              .IsRequired();
+
+            modelBuilder.Entity<Category>().Property(n => n.Description)
+             .IsRequired(false);
+
+            #endregion
+
+            #region DashBoard
+
+            modelBuilder.Entity<DashBoard>().Property(d => d.UserId).IsRequired();
+
+
+
 
             #endregion
 

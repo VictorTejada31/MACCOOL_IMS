@@ -1,0 +1,248 @@
+﻿@using Core.Application.ViewModels.Category;
+@using Core.Application.ViewModels.DefaultProducts;
+@model SaveDefaultProductViewModel
+@{
+    ViewData["Title"] = "Productos";
+    List<CategoryViewModel> categories = ViewBag.Categories;
+    List<DefaultProductViewModel> products = ViewBag.Products;
+}
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<div class="container-fluid mycontainer">
+    <div class="col-12">
+        <div class="HorizonNavBar">
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>John Doe</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" asp-action="LogOut" asp-controller="User">Cerrar Session</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div align="right" class="col-4 offset-8 search-div">
+            <form method="post" asp-action="ProductResult" asp-controller="Admin">
+                <div class="input-group mygroup">
+                    <input type="text" class="form-control" id="searchProduct" name="searchProduct" placeholder="Buscar...">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-dark my-serch-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary" id="addnewProductBtn" name="2" data-toggle="modal" data-target="#addNewProduct">
+                Agregar Nuevo
+            </button>
+        </div>
+        <div class="row">
+
+            @if (ViewBag.HasError)
+            {
+                <div class="alert alert-success alert-dismissible fade show role" role="alert">
+                    <p>@ViewBag.Message</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (Model.ModalState == 0)
+            {
+                @foreach (var item in products)
+                {
+                    <div class="col-4 ml-1">
+                        <div class="card defaultproduct-cards">
+
+                            <div class="card-body">
+                                <div class="myproduct-icon-container">
+                                    <span>
+                                        <a asp-action="EditProduct" asp-controller="Developer" asp-route-id="@item.Id">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" id="update-icon" height="20" style="color: mediumpurple" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn" type="button" data-toggle="modal" data-target="#delete-@item.Id">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" id="delete-icon" height="20" style="color: red" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </span>
+                                </div>
+                                <img src="@item.Img" class="card-img-top" alt="...">
+                                <h5 class="card-title">@item.Name - @item.BarCode</h5>
+                                <p class="card-text">
+                                    @item.Description
+                                    <span class="code-bar-span"><b>Categoría:</b> @item.Category</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addNewProduct" tabindex="-1" role="dialog" aria-labelledby="addNewProductTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addNewProductTitle">@(Model.ModalState == 2 ? "Editando Producto" : "Agregando Producto")</h5>
+                <a asp-action="Product" asp-controller="Developer" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="@(Model.ModalState == 2 ? "EditProduct" : "Product")" asp-controller="Developer" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </span>
+                            <input class="form-control" asp-for="Name" placeholder="Nombre" />
+                        </div>
+                        <span asp-validation-for="Name" class="text-danger input-validation-span"></span>
+
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                                </svg>
+                            </span>
+                            <input class="form-control" asp-for="Description" placeholder="Descripcion" />
+                        </div>
+                        <span asp-validation-for="Description" class="text-danger input-validation-span"></span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
+                                    <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z" />
+                                </svg>
+                            </span>
+                            <input class="form-control" asp-for="BarCode" placeholder="Codigo de barras" />
+                        </div>
+                        <span asp-validation-for="BarCode" class="text-danger input-validation-span"></span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                                </svg>
+                            </span>
+                            @if (Model.ModalState == 1)
+                            {
+                                <input class="form-control" asp-for="File" type="file" required />
+                            }
+                            else
+                            {
+                                <input class="form-control" asp-for="File" type="file" />
+                            }
+                        </div>
+                        <span asp-validation-for="File" class="text-danger input-validation-span"></span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </span>
+                            <select class="form-control" asp-for="CategoryId">
+                                <option value="0" disabled selected>Seleccionar Categoria</option>
+                                @foreach (var item in categories)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <span asp-validation-for="File" class="text-danger input-validation-span"></span>
+                    </div>
+                    <div class="modal-footer" align="center">
+                        @if (Model.ModalState == 1)
+                        {
+                            <button type="submit" class="btn btn-dark">Agregar Producto</button>
+                        }
+                        else
+                        {
+                            <button type="submit" class="btn btn-dark">Guardar Cambios</button>
+
+                        }
+                    </div>
+                    <input hidden asp-for="Img">
+                    <input hidden value="@Model.ModalState" id="ModalState" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    if (@Model.Id != 0) {
+        $(document).ready(function () {
+            $("#addNewProduct").modal('show');
+        });
+
+        const MODAL = document.getElementById('addNewProduct');
+        MODAL.addEventListener('hidden.bs.modal', () => {
+            window.location.pathname = "/Developer/Product";
+        });
+    }
+
+    let modelstate = document.getElementById('ModalState').value;
+    if (modelstate == 1) {
+        $(document).ready(function () {
+            $("#addNewProduct").modal('show');
+        });
+    }
+
+</script>
+
+@if (Model.ModalState == 0)
+{
+    @foreach (var item in products)
+    {
+        <div class="modal fade" id="delete-@item.Id" tabindex="-1" role="dialog" aria-labelledby="addNewProductTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addNewProductTitle">Confirmacion</h5>
+                        <a asp-action="Product" asp-controller="Developer" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-text">¿Estás seguro que deseas remover el producto <b>@item.Name</b>?</h4>
+                    </div>
+                    <div class="modal-footer confirmationDialog">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">No</button>
+                        <a asp-action="DeleteProduct" asp-controller="Developer" asp-route-id="@item.Id" class="btn btn-dark">Si</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    }
+}

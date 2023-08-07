@@ -1,5 +1,10 @@
-﻿@{
-    int i = 0;
+﻿@using Core.Application.Enums;
+@using Core.Application.ViewModels.Users;
+@using Core.Application.Helpers;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor _httpContext;
+@{
+    UserViewModel user = _httpContext.HttpContext.Session.Get<UserViewModel>("user");
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -16,41 +21,17 @@
 </head>
 <body>
 
-    @if(i == 1)
-    {
-        <header>
-            <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark  box-shadow mb-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="User" asp-action="Index">MCCOOL IMS.</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="User" asp-action="Login">INGRESAR</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="registerNavBar" class="btn btn" asp-area="" asp-controller="User" asp-action="RegisterIndex">REGISTRATE AHORA</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    }
-    else
+    @if(user != null && user.Roles.Any(r => r == Roles.Admin.ToString()))
     {
         <header id="leftSideBar">
             <div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <span class="sidebarTitle">MCCOOL IMS.</span>
                 </a>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a asp-action="DashBoard" asp-controller="Admin" class="nav-link text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
                                 <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
                                 <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
@@ -70,8 +51,8 @@
                         </a>
                         <div class="collapse" id="home-collapse" style="">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a asp-action="DefaultProducts" asp-controller="Admin" class="link-white rounded">Productos</a></li>
-                                <li><a asp-action="Product" asp-controller="Admin" class="link-white rounded">Mis Productos</a></li>
+                                <li><a asp-action="DefaultProducts" asp-controller="Admin" class="link-white rounded">- Productos</a></li>
+                                <li><a asp-action="Product" asp-controller="Admin" class="link-white rounded">- Mis Productos</a></li>
                             </ul>
                         </div>
                     </li>
@@ -101,6 +82,98 @@
 
         </header>
     }
+    else if (user != null && user.Roles.Any(r => r == Roles.Developer.ToString()))
+    {
+        <header id="leftSideBar">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="sidebarTitle">MCCOOL IMS.</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    
+                    <li>
+                        <a class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                            </svg>
+                            Mantenimiento
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </a>
+                        <div class="collapse" id="home-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: white; margin-right: 10px; " class="bi bi-box-seam" viewBox="0 0 16 16">
+                                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                                    </svg><a asp-action="Product" asp-controller="Developer" class="link-white rounded">Productos</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: white; margin-right: 10px;" class="bi bi-tag" viewBox="0 0 16 16">
+                                        <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                        <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                    </svg><a asp-action="Category" asp-controller="Developer" class="link-white rounded">Categoria</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                   
+                </ul>
+                <hr />
+                <div class="container text-muted" style="font-size: 16px;">
+                    &copy; @DateTime.Now.Year - MCOOL IMS.
+                </div>
+            </div>
+
+        </header>
+    }
+    else if (user != null && user.Roles.Any(r => r == Roles.Cashier.ToString()))
+    {
+        <header>
+            <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark  box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">MCCOOL IMS.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="User" asp-action="LogOut">Cerrar Session</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+    else
+    {
+       
+        <header>
+           <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark  box-shadow mb-3">
+               <div class="container-fluid">
+                   <a class="navbar-brand" asp-area="" asp-controller="User" asp-action="Index">MCCOOL IMS.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                           aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                               <a class="nav-link text-white" asp-area="" asp-controller="User" asp-action="Login">INGRESAR</a>
+                          </li>
+                          <li class="nav-item">
+                               <a id="registerNavBar" class="btn btn" asp-area="" asp-controller="User" asp-action="RegisterIndex">REGISTRATE AHORA</a>
+                          </li>
+                      </ul>
+                   </div>
+              </div>
+           </nav>
+       </header>
+    }
     
     <div class="container">
         <main role="main" class="pb-3">
@@ -108,7 +181,7 @@
         </main>
     </div>
 
-    @if (i==1)
+    @if (user == null)
     {
         <footer class=" footer text-muted">
             <div class="container">

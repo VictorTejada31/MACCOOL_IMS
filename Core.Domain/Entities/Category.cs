@@ -6,6 +6,7 @@ namespace Core.Domain.Entities
     public class Category : CommonsProperty
     {
         public string Name { get; set; }
+        public string Description { get; set; }
 
         //Navegation Property
 

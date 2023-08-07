@@ -10,3 +10,63 @@ C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Core.Domain\obj\D
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
 C:\Users\victo\Desktop\Proyecto Final TDS\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll
+E:\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.deps.json
+E:\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.dll
+E:\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.pdb
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.AssemblyReference.cache
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfoInputs.cache
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfo.cs
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.CoreCompileInputs.cache
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.dll
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
+E:\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.deps.json
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfo.cs
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.deps.json
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.AssemblyReference.cache
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfoInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfo.cs
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Pictures\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.deps.json
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfoInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfo.cs
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
+C:\Users\victo\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.deps.json
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\bin\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.AssemblyReference.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfoInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.AssemblyInfo.cs
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\refint\Core.Domain.dll
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\Core.Domain.pdb
+C:\Users\senado\Desktop\Proyecto Final\Inventory_Management\Core.Domain\obj\Debug\net6.0\ref\Core.Domain.dll

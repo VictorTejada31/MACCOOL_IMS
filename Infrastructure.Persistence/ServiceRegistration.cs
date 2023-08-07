@@ -34,7 +34,7 @@ namespace Infrastructure.Persistence
             services.AddTransient<IDefaultProductRepository, DefaultProductRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ICategoryRepositoy, CategoryRepository>();
-
+            services.AddTransient<IDashBoardRepository, DashBoardRepository>();
             #endregion
 
         }

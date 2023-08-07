@@ -17,7 +17,9 @@ namespace Infrastructure.Identity.Seeds
                 LastConnection = DateTime.Now,
                 UserName = "JohnDoe",
                 EmailConfirmed = true,
-                PhoneNumberConfirmed = true,   
+                PhoneNumberConfirmed = true,
+                Plan = Plans.Premium.ToString()
+
             };
 
             await userManager.CreateAsync(admin,"Pass123#");

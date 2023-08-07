@@ -28,7 +28,7 @@ namespace Core.Application.ViewModels.Users
         [DataType(DataType.Password)]
         [Compare(nameof(Password), ErrorMessage = "La contraseña no coincide")]
         public string ConfirmPassword { get; set; }
-        public string Plan { get; set; }
+        public string ? Plan { get; set; }
         public bool HasError { get; set; }
         public string? Error { get; set; }
     }

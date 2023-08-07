@@ -26,6 +26,7 @@ button{
 
 #eye_off {
     cursor: pointer;
+    margin-left: 90px;
 }
 
 .divider:after,
@@ -41,6 +42,7 @@ button{
 }
 
     #passforgot a {
+        color: blue;
         text-decoration: none;
     }
 
@@ -75,6 +77,12 @@ button{
     
 }
 
+    .btn-primary:hover {
+        color: white;
+        background-color: rebeccapurple;
+        border-color: rebeccapurple;
+    }
+
 #subRestriction {
     display:block;
     text-align: center;
@@ -89,12 +97,11 @@ button{
 }
 
 #choosePlanContainer{
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: 20px;
 }
 
-#whatsIncluded{
-    margin-top: 30px;
-}
+
 
 #whatsIncluded{
     color: white;
@@ -139,12 +146,17 @@ li span{
     padding: 10px;
 }
 
-#registerNavBar{
-   background-color: mediumpurple;
-   color: white;
-   border-radius: 25px;
-   font-size: 10px;
-}
+    .btn-secondary:hover {
+        background-color: rebeccapurple;
+        border-color: rebeccapurple;
+    }
+
+    #registerNavBar {
+        background-color: mediumpurple;
+        color: white;
+        border-radius: 25px;
+        font-size: 10px;
+    }
 
 #registerIndex_Title{
     display:block;
@@ -222,11 +234,15 @@ li span{
     margin: 10px 0 30px 0;
 }
 
-#registerIndex_cards_ul li span {
-    color: #CFC7DE;
-    text-align: left;
-    display: block;
-}
+    .registerIndex_cardButton:hover {
+        color: white;
+    }
+
+    #registerIndex_cards_ul li span {
+        color: #CFC7DE;
+        text-align: left;
+        display: block;
+    }
 
 .Register_PlanContainer {
     background-color: #231340;
@@ -336,10 +352,6 @@ a {
 
 }
 
-.search-div{
-    margin-bottom: 35px;
-}
-
 .defaultproduct-cards {
     height: 98%;
     width: 17.5rem;
@@ -415,6 +427,11 @@ a {
     color: white;
 }
 
+.modal-header a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
 .modal-footer{
     height: 50px;
 }
@@ -476,3 +493,179 @@ td button {
     text-align: center;
     font-size: 21px;
 }
+
+.myproduct-icon-container {
+    text-align: right;
+}
+
+.myproduct-icon-container button {
+    width: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.alert {
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 50px;
+}
+
+         
+
+.input-validation-span {
+    font-size: 14px;
+    
+}
+
+.card-text span {
+    margin: 0;
+}
+
+.dash-card-container {
+   height: 100%;
+}
+
+.dash-card-text span{
+    margin-top: -8px;
+    display: block;
+}
+
+.dash-card-title {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: -9px;
+    margin-bottom: 20px;
+}
+
+.dash-span-current {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.dash-span-porcent {
+    color: green;
+    font-size: 26px;
+}
+
+.dash-span-text {
+    color: darkgrey;
+    font-size: 10.5px;
+}
+
+.productAlert-left{
+    float: left;
+    width: 20%;
+}
+
+    .productAlert-left img {
+        width: 100%;
+        height: 100px;
+    }
+
+.productAlert-right{
+    text-align: left;
+    float: right;
+    width: 80%;
+
+}
+
+.productAlert-text span {
+    display: block;
+    font-size: 16px;
+}
+
+.productAlert-circle {
+    padding-left: 80%;
+}
+
+.chats-container {
+    margin-top: 10px;
+}
+
+
+.bills_left {
+    padding-top: 10px;
+    float: left;
+    width: 80%;
+}
+
+.bills_right {
+    float: right;
+    width: 20%;
+}
+
+
+.btn-sm{
+    width: 15%;
+}
+
+
+
+#bill_card_footer button {
+    float: left;
+}
+
+#bill_card {
+    height: 500px;
+}
+
+#loginContainer{
+    margin-top: 15px;
+}
+
+#CashierIndexContainer {
+    margin-top: 70px;
+}
+
+#billsFooterLeft {
+    width: 20%;
+    float: left;
+}
+
+#billsFooterRight {
+    width: 50%;
+    float: right;
+}
+
+#selectClient {
+    margin-top: 4px;
+    height: 31px;
+    width: 100%;
+    border-right-width: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+#btn_remove_products {
+    width: 90%;
+    font-size: 13px;
+}
+
+#btn_bill {
+    width: 90%;
+    font-size: 13px;
+}
+   
+
+#btnBillForClient {
+    width: 30%;
+}
+
+#Cashier_Client_Container{
+    margin-top: 5px;
+    height: 60%;
+}
+
+#homepageUserContainer {
+    margin-top: 100px;
+}
+
+.ml-1 {
+    margin-left: 0px;
+}
+
+#card_product_name{
+    font-size: 25px;
+}
+
